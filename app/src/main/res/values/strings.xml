@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TopHireTask</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_error">Enter a valid Email</string>
+    <string name="name_error">Atleast 3 characters</string>
+    <string name="password_error"> should contain 6 characters</string>
+    <string name="pw_notsame">Password does not match</string>
+</resources>

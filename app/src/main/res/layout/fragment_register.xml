@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zappyBgDark"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".onboarding.view.RegisterFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/zappyBgDark">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_big"
+            app:layout_constraintBottom_toTopOf="@+id/frag_reg_cons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/frag_reg_cons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_210sdp"
+            android:background="@drawable/curved_top_shape"
+            android:paddingHorizontal="@dimen/_24sdp"
+            android:paddingBottom="@dimen/_24sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/frag_reg_welcome_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_34sdp"
+                android:text="Create new account"
+                android:textAppearance="@style/font_700_20"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/frag_reg_desc_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed. "
+                android:textAppearance="@style/font_400_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frag_reg_welcome_tv" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/frag_reg_firname_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:text="First Name"
+                android:textAppearance="@style/font_700_15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frag_reg_desc_tv" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/frag_reg_firname_et"
+                android:layout_width="match_parent"
+                style="@style/customTextInput"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frag_reg_firname_tv" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reg_firnam_et"
+                    style="@style/customEditText"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/frag_reg_lasname_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:textAppearance="@style/font_700_15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frag_reg_firname_et" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/frag_reg_lasname_et"
+                android:layout_width="match_parent"
+                style="@style/customTextInput"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frag_reg_lasname_tv" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reg_lastnam_et"
+                    style="@style/customEditText"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/frag_reg_email_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textAppearance="@style/font_700_15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frag_reg_lasname_et" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/frag_reg_email_et"
+                android:layout_width="match_parent"
+                style="@style/customTextInput"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frag_reg_email_tv" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reg_email_et"
+                    style="@style/customEditText"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/frag_reg_pw_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textAppearance="@style/font_700_15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frag_reg_email_et" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/frag_reg_pw_et"
+                android:layout_width="match_parent"
+                style="@style/customTextInput"
+                app:passwordToggleEnabled="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/frag_reg_pw_tv"  >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/reg_pw_et"
+                    style="@style/customEditTextPw" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/frag_reg_Register_bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:background="@drawable/button_shape"
+                android:gravity="center"
+                android:text="Register"
+                android:textAppearance="@style/font_800_14"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frag_reg_pw_et" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/frag_reg_log_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_24sdp"
+                android:text="Already have an account? Login"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingVertical="@dimen/_5sdp"
+                android:textAppearance="@style/font_500_15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frag_reg_Register_bt" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
